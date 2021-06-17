@@ -1,2 +1,2 @@
 # Forca
- Jogo da Forca em Construct
+ Jogo da Forca em Construct com finalidades educacionais
