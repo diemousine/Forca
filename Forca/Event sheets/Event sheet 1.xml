@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="1952848753386224">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7205850515644898" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Push" sid="1330117636710484" type="questoes">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">&quot;531+843&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="4660051095329245" type="respostas">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">1374</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="1565362756710664" type="questoes">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">&quot;21+12&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="2275645109289244" type="respostas">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">33</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="7503583062005011" type="questoes">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">&quot;9+3&quot;</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="5" name="Push" sid="8184828248621918" type="respostas">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Value">12</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="0" name="Set text" sid="2362069912222601" type="Pergunta">
+                    <param id="0" name="Text">questoes.CurValue</param>
+                </action>
+                <action id="-10" name="Set value" sid="7005615351380584" type="resposta">
+                    <param id="0" name="Instance variable">respCerta</param>
+                    <param id="1" name="Value">respostas.CurValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2104629442160956">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2657411173017868" type="confirma" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1262640452846869" type="resposta">
+                    <param id="0" name="Instance variable">respondido</param>
+                    <param id="1" name="Value">float(resposta.Text)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3413925001679252">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2880811888039451" type="confirma" />
+                <condition id="-7" name="Compare instance variable" sid="8921819353226962" type="resposta">
+                    <param id="0" name="Instance variable">respCerta</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">resposta.respondido</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="1707794384184469" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347935567163539">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9829586538616284" type="confirma" />
+                <condition id="-7" name="Compare instance variable" sid="1962983697372693" type="resposta">
+                    <param id="0" name="Instance variable">respCerta</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">resposta.respondido</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Pop" sid="436510522324589" type="questoes">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Axis">0</param>
+                </action>
+                <action id="0" name="Set text" sid="8388348944493986" type="Pergunta">
+                    <param id="0" name="Text">questoes.CurValue</param>
+                </action>
+                <action id="6" name="Pop" sid="3030860437648784" type="respostas">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Axis">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="2852182754364554" type="resposta">
+                    <param id="0" name="Instance variable">respCerta</param>
+                    <param id="1" name="Value">respostas.CurValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="444757175678537">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3532951612207196" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1100963385706897" type="cabeca">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8383440360731693">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3271765941297969" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9614925250356551" type="corpo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8309500106097011">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4612296664202104" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7055661580770647" type="brcdireito">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6408795111917109">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5065273554969699" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4005107024322784" type="brcesquerdo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7518408998924883">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4668228326706816" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7866269191341418" type="pernadireita">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6230060031824801">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3761987434651555" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5155936916361199" type="pernaesquerda">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9023507952574633">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3864754512413898" type="cabeca">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8517532685002477" type="corda">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3540457922218712" type="Pergunta">
+                    <param id="0" name="Text">&quot;Perdeu!&quot;</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="6419799142422371" type="cabeca">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="405898975153385" type="corpo">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="799386080331223" type="brcdireito">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="8212814970007515" type="brcesquerdo">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="2745099342210411" type="pernadireita">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="8666588924016526" type="pernaesquerda">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="4796678002995633" type="confirma">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2390643300054628">
+            <conditions>
+                <condition id="0" name="Compare text" sid="5559527065830622" type="Pergunta">
+                    <param id="0" name="Text to compare">&quot;0&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1620552872157313" type="Pergunta">
+                    <param id="0" name="Text">&quot;Parabéns!&quot;</param>
+                </action>
+                <action id="2" name="Set visible" sid="107112444096649" type="confirma">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

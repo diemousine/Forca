@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Forca</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>21202</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="fundo" sid="3227360767535512">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5968991654744351" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Minhas imagens\01686_afternoonshadows_1920x1200.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cabeca" sid="8530458864278785">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="vida" sid="7079615404196604" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="7413314320476224">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3556357903273958">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2572531420408696" speed="5">
+                    <frame duration="1" hotspotX="0.479675" hotspotY="1.43478" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="corda" sid="2257986477120349">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1855238890352902" speed="5">
+                    <frame duration="1" hotspotX="0.923077" hotspotY="1.84848" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="corpo" sid="3732040332624619">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1698361798758457">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="4052845393633102">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5220683340061511" speed="5">
+                    <frame duration="1" hotspotX="0.606061" hotspotY="1.95" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="brcdireito" sid="2707394098853766">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1721100358186965">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3336844692215659">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8423591257957738" speed="5">
+                    <frame duration="1" hotspotX="-0.307692" hotspotY="2.30435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="brcesquerdo" sid="4302032461766541">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="228854356001058">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="2501212191901432">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2790636881504087" speed="5">
+                    <frame duration="1" hotspotX="-0.307692" hotspotY="2.30435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pernadireita" sid="1945118691045758">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="8344287674674324">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="680142980460551">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8883650854601646" speed="5">
+                    <frame duration="1" hotspotX="-0.307692" hotspotY="2.30435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pernaesquerda" sid="3051375458879101">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="5930152204455367">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="3097907292937057">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2324659234617458" speed="5">
+                    <frame duration="1" hotspotX="-0.307692" hotspotY="2.30435" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pergunta" sid="1465599407198805">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="resposta" sid="6494357201421121">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable comment="Resposta do sistema" name="respCerta" sid="1615990579714593" type="number" />
+                <instance-variable comment="Resposta do usuário" name="respondido" sid="1755765648564694" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="confirma" sid="3387512287964969">
+            <plugin id="Button" />
+        </object-type>
+        <object-type global="1" name="questoes" sid="7204510393979185">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="respostas" sid="4798118578159793">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Mouse" sid="8220462281132877">
+            <plugin id="Mouse" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="13" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
